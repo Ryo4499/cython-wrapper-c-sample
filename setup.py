@@ -1,5 +1,4 @@
-from distutils.core import setup
-from distutils.extension import Extension
+from setuptools import setup, Extension
 from Cython.Build import cythonize
 
 examples_extension = Extension(
@@ -11,5 +10,5 @@ examples_extension = Extension(
 )
 setup(
     name="pyexamples",
-    ext_modules=cythonize([examples_extension])
+    ext_modules=cythonize([examples_extension],language_level="3")
 )
