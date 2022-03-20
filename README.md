@@ -1,2 +1,10 @@
-# cython-c-wrapper
-[Simple example of wrapping a C library with Cython](https://stavshamir.github.io/python/making-your-c-library-callable-from-python-by-wrapping-it-with-cython/).
+# Cython C Wrapper
+
+## How to Run
+
+```bash
+cd cyhton-c-wrapper-custom
+make
+python3 setup.py build_ext --inplace
+python3 main.py
+```
