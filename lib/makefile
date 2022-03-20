@@ -1,11 +1,11 @@
 CC = gcc
 
-default: libexamples.a
+default: libmain.a
 
-libexamples.a: examples.o
+libmain.a: main.o
 	ar rcs $@ $^
     
-examples.o: examples.c examples.h
+main.o: main.c main.h
 	$(CC) -c $<
 
 clean:

@@ -4,13 +4,13 @@
 {
     "distutils": {
         "depends": [
-            "lib/examples.h"
+            "lib/main.h"
         ],
         "include_dirs": [
             "lib"
         ],
         "libraries": [
-            "examples"
+            "main"
         ],
         "library_dirs": [
             "lib"
@@ -706,7 +706,7 @@ static CYTHON_INLINE float __PYX_NAN() {
 #define __PYX_HAVE__pyexamples
 #define __PYX_HAVE_API__pyexamples
 /* Early includes */
-#include "examples.h"
+#include "main.h"
 #ifdef _OPENMP
 #include <omp.h>
 #endif /* _OPENMP */
@@ -1580,7 +1580,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "pyexamples.pyx":1
- * cdef extern from "examples.h":             # <<<<<<<<<<<<<<
+ * cdef extern from "main.h":             # <<<<<<<<<<<<<<
  *     void hello(const char *name)
  * 
  */

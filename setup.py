@@ -4,7 +4,7 @@ from Cython.Build import cythonize
 examples_extension = Extension(
     name="pyexamples",
     sources=["pyexamples.pyx"],
-    libraries=["examples"],
+    libraries=["main"],
     library_dirs=["lib"],
     include_dirs=["lib"]
 )
