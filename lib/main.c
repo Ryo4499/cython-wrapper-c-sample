@@ -3,5 +3,5 @@
 #include "main.h"
 
 void hello(const char *name) {
-    printf("hello %s\n", name);
+    printf("ここはC言語です｡\n%s\n", name);
 }
