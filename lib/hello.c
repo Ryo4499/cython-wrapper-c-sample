@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-#include "main.h"
+#include "hello.h"
 
-void hello(const char *name) {
+void c_hello(const char *name) {
     printf("ここはC言語です｡\n%s\n", name);
 }

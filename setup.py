@@ -5,11 +5,11 @@ SRC_DIR = "./src/"
 LIB_DIR = "./lib/"
 
 examples_extension = Extension(
-    name="pyexamples",
-    sources=[SRC_DIR+"pyexamples.pyx",LIB_DIR+"main.c"],
+    name="hello",
+    sources=[SRC_DIR+"hello.pyx",LIB_DIR+"hello.c"],
     include_dirs=["lib"]
 )
 setup(
-    name="pyexamples",
+    name="hello",
     ext_modules=cythonize([examples_extension],language_level="3")
 )

@@ -1,9 +1,9 @@
-LIB_DIR = lib
+SRC_DIR = src/
 
-default: pyexamples
+default: hello*.so
 
-pyexamples: setup.py
-	python3 setup.py build_ext --inplace && rm -f pyexamples.c && rm -Rf build
+hello*.so: setup.py
+	python3 setup.py build_ext --inplace && rm -Rf build
 
 clean:
-	rm *.so
+	rm *.so && rm $(SRC_DIR)*.c

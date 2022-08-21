@@ -4,18 +4,18 @@
 {
     "distutils": {
         "depends": [
-            "lib/main.h"
+            "lib/hello.h"
         ],
         "include_dirs": [
             "lib"
         ],
-        "name": "pyexamples",
+        "name": "hello",
         "sources": [
-            "./src/pyexamples.pyx",
-            "./lib/main.c"
+            "./src/hello.pyx",
+            "./lib/hello.c"
         ]
     },
-    "module_name": "pyexamples"
+    "module_name": "hello"
 }
 END: Cython Metadata */
 
@@ -757,10 +757,10 @@ static CYTHON_INLINE float __PYX_NAN() {
   #endif
 #endif
 
-#define __PYX_HAVE__pyexamples
-#define __PYX_HAVE_API__pyexamples
+#define __PYX_HAVE__hello
+#define __PYX_HAVE_API__hello
 /* Early includes */
-#include "main.h"
+#include "hello.h"
 #ifdef _OPENMP
 #include <omp.h>
 #endif /* _OPENMP */
@@ -970,7 +970,7 @@ static const char *__pyx_filename;
 
 
 static const char *__pyx_f[] = {
-  "src/pyexamples.pyx",
+  "src/hello.pyx",
 };
 
 /*--- Type declarations ---*/
@@ -1174,42 +1174,42 @@ static int __Pyx_check_binary_version(void);
 static int __Pyx_InitStrings(__Pyx_StringTabEntry *t);
 
 
-/* Module declarations from 'pyexamples' */
-#define __Pyx_MODULE_NAME "pyexamples"
-extern int __pyx_module_is_main_pyexamples;
-int __pyx_module_is_main_pyexamples = 0;
+/* Module declarations from 'hello' */
+#define __Pyx_MODULE_NAME "hello"
+extern int __pyx_module_is_main_hello;
+int __pyx_module_is_main_hello = 0;
 
-/* Implementation of 'pyexamples' */
+/* Implementation of 'hello' */
 static const char __pyx_k_main[] = "__main__";
 static const char __pyx_k_name[] = "__name__";
 static const char __pyx_k_test[] = "__test__";
+static const char __pyx_k_hello[] = "hello";
 static const char __pyx_k_name_2[] = "name";
 static const char __pyx_k_py_hello[] = "py_hello";
-static const char __pyx_k_pyexamples[] = "pyexamples";
+static const char __pyx_k_src_hello_pyx[] = "src/hello.pyx";
 static const char __pyx_k_cline_in_traceback[] = "cline_in_traceback";
-static const char __pyx_k_src_pyexamples_pyx[] = "src/pyexamples.pyx";
 static PyObject *__pyx_n_s_cline_in_traceback;
+static PyObject *__pyx_n_s_hello;
 static PyObject *__pyx_n_s_main;
 static PyObject *__pyx_n_s_name;
 static PyObject *__pyx_n_s_name_2;
 static PyObject *__pyx_n_s_py_hello;
-static PyObject *__pyx_n_s_pyexamples;
-static PyObject *__pyx_kp_s_src_pyexamples_pyx;
+static PyObject *__pyx_kp_s_src_hello_pyx;
 static PyObject *__pyx_n_s_test;
-static PyObject *__pyx_pf_10pyexamples_py_hello(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_name); /* proto */
+static PyObject *__pyx_pf_5hello_py_hello(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_name); /* proto */
 static PyObject *__pyx_tuple_;
 static PyObject *__pyx_codeobj__2;
 /* Late includes */
 
-/* "pyexamples.pyx":1
+/* "hello.pyx":1
  * def py_hello(name: bytes) -> None:             # <<<<<<<<<<<<<<
- *     hello(name)
+ *     c_hello(name)
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_10pyexamples_1py_hello(PyObject *__pyx_self, PyObject *__pyx_v_name); /*proto*/
-static PyMethodDef __pyx_mdef_10pyexamples_1py_hello = {"py_hello", (PyCFunction)__pyx_pw_10pyexamples_1py_hello, METH_O, 0};
-static PyObject *__pyx_pw_10pyexamples_1py_hello(PyObject *__pyx_self, PyObject *__pyx_v_name) {
+static PyObject *__pyx_pw_5hello_1py_hello(PyObject *__pyx_self, PyObject *__pyx_v_name); /*proto*/
+static PyMethodDef __pyx_mdef_5hello_1py_hello = {"py_hello", (PyCFunction)__pyx_pw_5hello_1py_hello, METH_O, 0};
+static PyObject *__pyx_pw_5hello_1py_hello(PyObject *__pyx_self, PyObject *__pyx_v_name) {
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
@@ -1217,7 +1217,7 @@ static PyObject *__pyx_pw_10pyexamples_1py_hello(PyObject *__pyx_self, PyObject 
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("py_hello (wrapper)", 0);
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_name), (&PyBytes_Type), 1, "name", 1))) __PYX_ERR(0, 1, __pyx_L1_error)
-  __pyx_r = __pyx_pf_10pyexamples_py_hello(__pyx_self, ((PyObject*)__pyx_v_name));
+  __pyx_r = __pyx_pf_5hello_py_hello(__pyx_self, ((PyObject*)__pyx_v_name));
 
   /* function exit code */
   goto __pyx_L0;
@@ -1228,7 +1228,7 @@ static PyObject *__pyx_pw_10pyexamples_1py_hello(PyObject *__pyx_self, PyObject 
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_10pyexamples_py_hello(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_name) {
+static PyObject *__pyx_pf_5hello_py_hello(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_name) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   char const *__pyx_t_1;
@@ -1237,27 +1237,27 @@ static PyObject *__pyx_pf_10pyexamples_py_hello(CYTHON_UNUSED PyObject *__pyx_se
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("py_hello", 0);
 
-  /* "pyexamples.pyx":2
+  /* "hello.pyx":2
  * def py_hello(name: bytes) -> None:
- *     hello(name)             # <<<<<<<<<<<<<<
+ *     c_hello(name)             # <<<<<<<<<<<<<<
  */
   if (unlikely(__pyx_v_name == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "expected bytes, NoneType found");
     __PYX_ERR(0, 2, __pyx_L1_error)
   }
   __pyx_t_1 = __Pyx_PyBytes_AsString(__pyx_v_name); if (unlikely((!__pyx_t_1) && PyErr_Occurred())) __PYX_ERR(0, 2, __pyx_L1_error)
-  hello(__pyx_t_1);
+  c_hello(__pyx_t_1);
 
-  /* "pyexamples.pyx":1
+  /* "hello.pyx":1
  * def py_hello(name: bytes) -> None:             # <<<<<<<<<<<<<<
- *     hello(name)
+ *     c_hello(name)
  */
 
   /* function exit code */
   __pyx_r = Py_None; __Pyx_INCREF(Py_None);
   goto __pyx_L0;
   __pyx_L1_error:;
-  __Pyx_AddTraceback("pyexamples.py_hello", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("hello.py_hello", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -1272,17 +1272,17 @@ static PyMethodDef __pyx_methods[] = {
 #if PY_MAJOR_VERSION >= 3
 #if CYTHON_PEP489_MULTI_PHASE_INIT
 static PyObject* __pyx_pymod_create(PyObject *spec, PyModuleDef *def); /*proto*/
-static int __pyx_pymod_exec_pyexamples(PyObject* module); /*proto*/
+static int __pyx_pymod_exec_hello(PyObject* module); /*proto*/
 static PyModuleDef_Slot __pyx_moduledef_slots[] = {
   {Py_mod_create, (void*)__pyx_pymod_create},
-  {Py_mod_exec, (void*)__pyx_pymod_exec_pyexamples},
+  {Py_mod_exec, (void*)__pyx_pymod_exec_hello},
   {0, NULL}
 };
 #endif
 
 static struct PyModuleDef __pyx_moduledef = {
     PyModuleDef_HEAD_INIT,
-    "pyexamples",
+    "hello",
     0, /* m_doc */
   #if CYTHON_PEP489_MULTI_PHASE_INIT
     0, /* m_size */
@@ -1312,12 +1312,12 @@ static struct PyModuleDef __pyx_moduledef = {
 
 static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_cline_in_traceback, __pyx_k_cline_in_traceback, sizeof(__pyx_k_cline_in_traceback), 0, 0, 1, 1},
+  {&__pyx_n_s_hello, __pyx_k_hello, sizeof(__pyx_k_hello), 0, 0, 1, 1},
   {&__pyx_n_s_main, __pyx_k_main, sizeof(__pyx_k_main), 0, 0, 1, 1},
   {&__pyx_n_s_name, __pyx_k_name, sizeof(__pyx_k_name), 0, 0, 1, 1},
   {&__pyx_n_s_name_2, __pyx_k_name_2, sizeof(__pyx_k_name_2), 0, 0, 1, 1},
   {&__pyx_n_s_py_hello, __pyx_k_py_hello, sizeof(__pyx_k_py_hello), 0, 0, 1, 1},
-  {&__pyx_n_s_pyexamples, __pyx_k_pyexamples, sizeof(__pyx_k_pyexamples), 0, 0, 1, 1},
-  {&__pyx_kp_s_src_pyexamples_pyx, __pyx_k_src_pyexamples_pyx, sizeof(__pyx_k_src_pyexamples_pyx), 0, 0, 1, 0},
+  {&__pyx_kp_s_src_hello_pyx, __pyx_k_src_hello_pyx, sizeof(__pyx_k_src_hello_pyx), 0, 0, 1, 0},
   {&__pyx_n_s_test, __pyx_k_test, sizeof(__pyx_k_test), 0, 0, 1, 1},
   {0, 0, 0, 0, 0, 0, 0}
 };
@@ -1329,14 +1329,14 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
-  /* "pyexamples.pyx":1
+  /* "hello.pyx":1
  * def py_hello(name: bytes) -> None:             # <<<<<<<<<<<<<<
- *     hello(name)
+ *     c_hello(name)
  */
   __pyx_tuple_ = PyTuple_Pack(1, __pyx_n_s_name_2); if (unlikely(!__pyx_tuple_)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple_);
   __Pyx_GIVEREF(__pyx_tuple_);
-  __pyx_codeobj__2 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple_, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_src_pyexamples_pyx, __pyx_n_s_py_hello, 1, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__2)) __PYX_ERR(0, 1, __pyx_L1_error)
+  __pyx_codeobj__2 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple_, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_src_hello_pyx, __pyx_n_s_py_hello, 1, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__2)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_RefNannyFinishContext();
   return 0;
   __pyx_L1_error:;
@@ -1434,11 +1434,11 @@ static int __Pyx_modinit_function_import_code(void) {
 
 
 #if PY_MAJOR_VERSION < 3
-__Pyx_PyMODINIT_FUNC initpyexamples(void) CYTHON_SMALL_CODE; /*proto*/
-__Pyx_PyMODINIT_FUNC initpyexamples(void)
+__Pyx_PyMODINIT_FUNC inithello(void) CYTHON_SMALL_CODE; /*proto*/
+__Pyx_PyMODINIT_FUNC inithello(void)
 #else
-__Pyx_PyMODINIT_FUNC PyInit_pyexamples(void) CYTHON_SMALL_CODE; /*proto*/
-__Pyx_PyMODINIT_FUNC PyInit_pyexamples(void)
+__Pyx_PyMODINIT_FUNC PyInit_hello(void) CYTHON_SMALL_CODE; /*proto*/
+__Pyx_PyMODINIT_FUNC PyInit_hello(void)
 #if CYTHON_PEP489_MULTI_PHASE_INIT
 {
   return PyModuleDef_Init(&__pyx_moduledef);
@@ -1505,7 +1505,7 @@ bad:
 }
 
 
-static CYTHON_SMALL_CODE int __pyx_pymod_exec_pyexamples(PyObject *__pyx_pyinit_module)
+static CYTHON_SMALL_CODE int __pyx_pymod_exec_hello(PyObject *__pyx_pyinit_module)
 #endif
 #endif
 {
@@ -1517,7 +1517,7 @@ static CYTHON_SMALL_CODE int __pyx_pymod_exec_pyexamples(PyObject *__pyx_pyinit_
   #if CYTHON_PEP489_MULTI_PHASE_INIT
   if (__pyx_m) {
     if (__pyx_m == __pyx_pyinit_module) return 0;
-    PyErr_SetString(PyExc_RuntimeError, "Module 'pyexamples' has already been imported. Re-initialisation is not supported.");
+    PyErr_SetString(PyExc_RuntimeError, "Module 'hello' has already been imported. Re-initialisation is not supported.");
     return -1;
   }
   #elif PY_MAJOR_VERSION >= 3
@@ -1532,7 +1532,7 @@ if (!__Pyx_RefNanny) {
       Py_FatalError("failed to import 'refnanny' module");
 }
 #endif
-  __Pyx_RefNannySetupContext("__Pyx_PyMODINIT_FUNC PyInit_pyexamples(void)", 0);
+  __Pyx_RefNannySetupContext("__Pyx_PyMODINIT_FUNC PyInit_hello(void)", 0);
   if (__Pyx_check_binary_version() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #ifdef __Pxy_PyFrame_Initialize_Offsets
   __Pxy_PyFrame_Initialize_Offsets();
@@ -1569,7 +1569,7 @@ if (!__Pyx_RefNanny) {
   Py_INCREF(__pyx_m);
   #else
   #if PY_MAJOR_VERSION < 3
-  __pyx_m = Py_InitModule4("pyexamples", __pyx_methods, 0, 0, PYTHON_API_VERSION); Py_XINCREF(__pyx_m);
+  __pyx_m = Py_InitModule4("hello", __pyx_methods, 0, 0, PYTHON_API_VERSION); Py_XINCREF(__pyx_m);
   #else
   __pyx_m = PyModule_Create(&__pyx_moduledef);
   #endif
@@ -1587,14 +1587,14 @@ if (!__Pyx_RefNanny) {
   #if PY_MAJOR_VERSION < 3 && (__PYX_DEFAULT_STRING_ENCODING_IS_ASCII || __PYX_DEFAULT_STRING_ENCODING_IS_DEFAULT)
   if (__Pyx_init_sys_getdefaultencoding_params() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
-  if (__pyx_module_is_main_pyexamples) {
+  if (__pyx_module_is_main_hello) {
     if (PyObject_SetAttr(__pyx_m, __pyx_n_s_name, __pyx_n_s_main) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   }
   #if PY_MAJOR_VERSION >= 3
   {
     PyObject *modules = PyImport_GetModuleDict(); if (unlikely(!modules)) __PYX_ERR(0, 1, __pyx_L1_error)
-    if (!PyDict_GetItemString(modules, "pyexamples")) {
-      if (unlikely(PyDict_SetItemString(modules, "pyexamples", __pyx_m) < 0)) __PYX_ERR(0, 1, __pyx_L1_error)
+    if (!PyDict_GetItemString(modules, "hello")) {
+      if (unlikely(PyDict_SetItemString(modules, "hello", __pyx_m) < 0)) __PYX_ERR(0, 1, __pyx_L1_error)
     }
   }
   #endif
@@ -1615,11 +1615,11 @@ if (!__Pyx_RefNanny) {
   if (__Pyx_patch_abc() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
 
-  /* "pyexamples.pyx":1
+  /* "hello.pyx":1
  * def py_hello(name: bytes) -> None:             # <<<<<<<<<<<<<<
- *     hello(name)
+ *     c_hello(name)
  */
-  __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_10pyexamples_1py_hello, NULL, __pyx_n_s_pyexamples); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1, __pyx_L1_error)
+  __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_5hello_1py_hello, NULL, __pyx_n_s_hello); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_py_hello, __pyx_t_1) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -1635,11 +1635,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_XDECREF(__pyx_t_1);
   if (__pyx_m) {
     if (__pyx_d) {
-      __Pyx_AddTraceback("init pyexamples", __pyx_clineno, __pyx_lineno, __pyx_filename);
+      __Pyx_AddTraceback("init hello", __pyx_clineno, __pyx_lineno, __pyx_filename);
     }
     Py_CLEAR(__pyx_m);
   } else if (!PyErr_Occurred()) {
-    PyErr_SetString(PyExc_ImportError, "init pyexamples");
+    PyErr_SetString(PyExc_ImportError, "init hello");
   }
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();

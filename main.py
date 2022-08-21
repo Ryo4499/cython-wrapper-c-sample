@@ -1,3 +1,3 @@
-import pyexamples
+import hello
 
-pyexamples.py_hello("こっちはPythonで渡しました｡".encode("utf-8"))
+hello.py_hello("こっちはPythonで渡しました｡".encode("utf-8"))
