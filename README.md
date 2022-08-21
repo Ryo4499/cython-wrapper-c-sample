@@ -3,8 +3,10 @@
 ## How to Run
 
 ```bash
-cd cyhton-c-wrapper-custom
+cd cython-wrap-c-sample
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
 make
-python3 setup.py build_ext --inplace
 python3 main.py
 ```
